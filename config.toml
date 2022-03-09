@@ -1,3 +1,450 @@
-baseURL = 'http://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "http://deltronik.github.io/"
+# determina el lenguaje preterminado
+defaultContentLanguage = "es"
+# determina el lenguaje determinado de codigo
+languajeCode = "en"
+title = "DelTronik"
+
+# defina el tema o plantilla
+theme = "uBlogger"
+# cambie la version de compilación si es necesario
+[params]
+  version = "2.0.X"
+  # descripción del sitio
+  description = "Cuando los electrones se mueven las cosas suceden"
+  # palabras claves
+  keywords = ["Electronica","Electricidad", "desarrollo"]
+  # tema preterminado (light, dark or auto)
+  defaultTheme = "auto"
+  # repositorio de github 
+  gitRepo = "www.github.io/deltronik/blog"
+  # hash de sri, si no esta activado no se usa
+  # ("sha256", "sha384", "sha512", "md5")
+  fingerprint = "sha256"
+  # formato de fecha
+  dateFormat = "02-01-2006"
+  # imagenes para graficos de twitter card
+  images = ["/avatar.png"]
+
+#configuración para iconos en movil
+[params.app]
+  # Titulo que se mostrara al crear un acceso directo en movil 
+  title = "DelTronik"
+  # Se deben omitir los enlaces para el favicon?
+  noFavicon = false
+  # svg para usar en vez del .png o el .ico
+  svgFavicon = ""
+  # color del buscador android
+  themeColor = "#fffffff"
+  # safari mask icon color
+  iconColor = "#5bbad5"
+  # windows v8-v10 title color
+  titleColor = "#da532c"
+
+# Configuración del buscador
+[params.search]
+  enable = true
+  # motor de busqueda (lunr or algolia)
+  type = "lunr"
+  # max de palabras indexadas
+  contentLength = 4000
+  # placeholder, descripción de la barra de busqueda
+  placeholder = "Buscar en el blog..."
+  # maximo de resultados mostrados
+  maxResultLength = 12
+  # fragmento de los resultados que se muestre
+  snippetLength = 30
+  # nombre de la etiqueta a resaltar  
+  highlighTag = "em"
+  # usar url absoluta en la indexación de busqueda
+  absoluteURL = false
+    [params.search.algolia]
+      index = ""
+      appID = ""
+      searchKey = ""
+
+# Header Config
+[params.header]
+  # desktop header mode (fixed, normal , auto)
+  desktopMode = "fixed"
+  # mobile header mode
+  mobileMode = "auto"
+  # configuración del titulo en el header
+  [params.header.title]
+  # url del logo
+  logo = ""
+  # Titulo
+  name = "DelTronik"
+  # agrega información extra antes o  despues del nombre
+  # html esta permitido
+  pre = ""
+  post = ""
+
+# Footer Config
+[params.footer]
+  enable = true
+  # contenido agregado (html esta permitido)
+  custom = "DelTronik based on Hugo & uBlogger"
+  # mostrar 'información de hugo y el tema'
+  hugo = false
+  # logo de copyright
+  copyright = true
+  # mostrar nombre de autor
+  author = true
+  # creación del sitio
+  since = "2022"
+  # ICP info only in China (HTML format is supported)
+    icp = ""
+  # license info
+  license = '<a rel="license external nofollow noopener noreffer" href="https://creativecommons.org/licenses/by-nc/4.0/" target="_blank">CC BY-NC 4.0</a>'
+
+# Config Section page (all posts)
+[params.list]
+  # cantidad de espación para cada post
+  paginate  = 20
+  # Formato fecha
+  dateFormat = "01-02"
+  # rss pagina
+  rss = 15
+
+# Configuración del Home
+[params.home]
+  #rss pagina
+  rss = 15
+  # perfile del home page
+    [params.home.profile]
+      enable = true
+      # Email de preferencia en el avatar
+      gravatarEmail = "deltronik98@gmail.com"
+      # URL del avatar
+      avatarURL = "images/Logo.png"
+      # titulo que muestra en Home page (html permitido)
+      title = "DelTronik"
+      # Subtitulo or Description
+      subtitle = "Cuando los electrones se mueven las cosas suceden"
+      # social link status
+      social = true
+      # disclaimer (html supported)
+      disclaimer = "esto es una prueba"
+  # Home Page post
+    [params.home.posts]
+      enable = true
+      # cantidad de entradas a mostrar
+      paginate = 10
+      # remplazart con pagina oculta in params.page
+      # de forma preterminada cuando no seleciona hudenfrompage in front matter
+      defaultHiddenFromHomePage = false
+
+# Social media del autor
+[params.social]
+  GitHub = "deltronik"
+  Linkedin = "DanyRdia"
+  Twitter = "deltronik_"
+  Instagram = "deltronik_"
+  Facebook = "da ny"
+  GitLab = "DelTronikLab"
+  Telegram = ""
+  Medium = ""
+  Youtubelegacy = ""
+    Youtubecustom = ""
+    Youtubechannel = ""
+    Tumblr = ""
+    Quora = ""
+    Keybase = ""
+    Pinterest = ""
+    Reddit = ""
+    Codepen = ""
+    FreeCodeCamp = ""
+    Bitbucket = ""
+    Stackoverflow = ""
+    Weibo = ""
+    Odnoklassniki = ""
+    VK = ""
+    Flickr = ""
+    Xing = ""
+    Snapchat = ""
+    Soundcloud = ""
+    Spotify = ""
+    Bandcamp = ""
+    Paypal = ""
+    Fivehundredpx = ""
+    Mix = ""
+    Goodreads = ""
+    Lastfm = ""
+    Foursquare = ""
+    Hackernews = ""
+    Kickstarter = ""
+    Patreon = ""
+    Steam = ""
+    Twitch = ""
+    Strava = ""
+    Skype = ""
+    Whatsapp = ""
+    Zhihu = ""
+    Douban = ""
+    Angellist = ""
+    Slidershare = ""
+    Jsfiddle = ""
+    Deviantart = ""
+    Behance = ""
+    Dribbble = ""
+    Wordpress = ""
+    Vine = ""
+    Googlescholar = ""
+    Researchgate = ""
+    Mastodon = ""
+    Thingiverse = ""
+    Devto = ""
+    Gitea = ""
+    XMPP = ""
+    Matrix = ""
+    Bilibili = ""
+    Email = "deltronik98@gmail.com"
+    RSS = true
+# Configuración de la pagina
+[params.page]
+  # tipo de identación , por defecto esta el tema clasico (https://ublogger.netlify.app/theme-documentation-content/#theme)
+  theme = "classic"
+  # ocultar entradas en pagina principal
+  hiddenFromHomePage = false
+  # Ocultar paginas de los resultados de busquedas
+  hiddenFromSearch = true
+  # mostrar una previsualización de imagen en el articulo
+  hiddenFeatureImage = true
+  # Activar twemoji
+  twemoji = true
+  # activar lightGallery
+  lightgallery = true
+  # activar ruby
+  ruby = true
+  # activar fraction extended syntax
+  fraction = true
+  # activar fontwasome extended sysntax
+  fontawesome  = true
+  # activar link hacia el markdown
+  linkToMarkdown = true
+  # mostrar todo el contenido en RSS
+  rssFullText = false
+  # Configuració de display post en la pagina
+    [params.summary]
+      # Mostrar una preview de los post en la pagina
+      hiddenImage = true
+      # mostrar descripción en las paginas
+      hiddenDescription = false
+      # Mostrar titulos 
+      hiddenTitle  = false
+  # Configuración de display tag en la pagina
+    [params.summary.tags]
+      # opcion de como mostrar tag
+      theme = "image"
+      # color de texto de etiqueta
+      color = "white"
+      # color de fondo
+      background = "black"
+      #transparencia
+      transparency = 0.9
+      # Visualización de fecha
+      [params.timeAgo]
+      #status
+      enable = "false"
+      lang = "es"
+  # Configuración de tabla de contenido
+    [params.page.toc]
+      # mostar tabla de contenido
+      enable = true
+      # tabla en linea o en lateral(false)
+      keepStatic = false
+      # colapsar automaticamente la tabla de contenido en el sidebar
+      auto = true
+  # soporte katex para formulas matematicas
+    [params.page.math]
+      enable = true
+      # delimitador de bloque de codigo preterminado (is $$---$$ y \\[--\\])
+      blockLeftDelimiter = "$$"
+      blockRightDelimiter = "$$"
+      # delimitador de linea de codigo preterminado (is $---$ y \\(--\\) )
+      inlineLeftDelimiter = "$"
+      inlineRightDelimiter = "$"
+      # Extension de Katex para copiar el texto
+      copyText = true
+      # Extension de mhchem de Katex
+      maxShowLines = 10
+  # Configuración soporte para mapas de MapBox GL JS
+    [params.page.mapbox]
+      # access token of Mapbox GL JS
+      accessToken = ""
+      # style for the light theme
+      lightStyle = "mapbox://styles/mapbox/light-v9"
+      # style for the dark theme
+      darkStyle = "mapbox://styles/mapbox/dark-v9"
+      # whether to add NavigationControl
+      navigation = true
+      # whether to add GeolocateControl
+      geolocate = true
+      # whether to add ScaleControl
+      scale = true
+      # whether to add FullscreenControl
+      fullscreen = true
+  # Configuración share social media
+    [params.page.share]
+      enable = true
+      Twitter = true
+      Facebook = true
+      Linkedin = true
+      Whatsapp = true
+      Pinterest = true
+      Tumblr = false
+      HackerNews = false
+      Reddit = true
+      VK = false
+      Buffer = false
+      Xing = false
+      Line = false
+      Instapaper = false
+      Pocket = false
+      Digg = false
+      Stumbleupon = false
+      Flipboard = false
+      Weibo = false
+      Renren = false
+      Myspace = false
+      Blogger = true
+      Baidu = false
+      Odnoklassniki = false
+      Evernote = true
+      Skype = false
+      Trello = false
+      Mix = false
+# REVIZAR MAS TARDE
+# uBlogger NEW | 0.2.7 Third-party library config
+    #[params.page.library]
+     # [params.page.library.css]
+        # someCSS = "some.css"
+        # located in "assets/"
+        # Or
+        # someCSS = "https://cdn.example.com/some.css"
+      #[params.page.library.js]
+        # someJavascript = "some.js"
+        # located in "assets/"
+        # Or
+        # someJavascript = "https://cdn.example.com/some.js"
+    # uBlogger CHANGED | 0.2.10 Page SEO config
+    #[params.page.seo]
+      # image URL
+     # images = []
+      # Publisher info
+      #[params.page.seo.publisher]
+       # name = ""
+        #logoUrl = ""
+
+    # uBlogger CHANGED | 1.1.0 Comment config
+    #[params.comment]
+     # enable = true
+      # uBlogger NEW | 1.0.0
+      # Remark42 comment config
+      #[params.comment.remark42]
+       # enable = false
+        # the location of your server with Remark42
+        #host = "https://remark.example.com"
+        # remark42 supports comments for several sites at once, this identifier indicates which site to display comments for.
+        #site = "you_site_key"
+        # design theme
+        #theme = "light"
+        # language
+        #locale = "en"
+        # enable or disable smiley support
+        #emailSubscribe = "true"
+      # Disqus comment config
+     # [params.comment.disqus]
+        # uBlogger NEW | 0.1.1
+      #  enable = false
+        # Disqus shortname to use Disqus in posts
+      #  shortname = ""
+      # Gitalk comment config
+      #[params.comment.gitalk]
+        # uBlogger NEW | 0.1.1
+     #   enable = false
+      #  owner = ""
+       # repo = ""
+       # clientId = ""
+       # clientSecret = ""
+      # Valine comment config
+     # [params.comment.valine]
+      #  enable = false
+       # appId = ""
+ #       appKey = ""
+  #      placeholder = ""
+   #     avatar = "mp"
+    #    meta= ""
+     #   pageSize = 10
+      #  lang = ""
+#        visitor = true
+ #       recordIP = true
+  #      highlight = true
+   #     enableQQ = false
+    #    serverURLs = ""
+        # uBlogger NEW | 0.2.6 emoji data file name, default is "google.yml"
+        # ("apple.yml", "google.yml", "facebook.yml", "twitter.yml")
+        # located in "themes/uBlogger/assets/data/emoji/" directory
+        # you can store your own data files in the same path under your project:
+        # "assets/data/emoji/"
+#        emoji = ""
+      # Facebook comment config
+ #     [params.comment.facebook]
+  #      enable = false
+   #     width = "100%"
+    #    numPosts = 10
+     #   appId = ""
+      #  languageCode = ""
+      # uBlogger NEW | 0.2.0 Telegram comments config
+     # [params.comment.telegram]
+     #   enable = false
+     #   siteID = ""
+     #   limit = 5
+     #   height = ""
+     #   color = ""
+     #   colorful = true
+      #  dislikes = false
+      #  outlined = false
+      # uBlogger NEW | 0.2.0 Commento comment config
+     # [params.comment.commento]
+      #  enable = false
+      # uBlogger NEW | 0.2.5 Utterances comment config
+      #[params.comment.utterances]
+       # enable = false
+        # owner/repo
+        #repo = ""
+        #issueTerm = "pathname"
+        #label = ""
+        #lightTheme = "github-light"
+        #darkTheme = "github-dark"
+
+
+
+[menu]
+  [[menu.main]]
+    identifier = "Entradas"
+    # es posible agregar información antes del nombre
+    # (el formato html esta permitido)
+    pre = "|"
+    # es posible agregar información despues del nombre
+    # (el formato html esta permitido)
+    posts = ""
+    name = "Entradas"
+    url = "/posts/"
+    title = "Publicaciones del blog"
+    weight  = 1
+
+  [[menu.main]]
+    identifier = "Tags"
+    # es posible agregar información antes del nombre
+    # (el formato html esta permitido)
+    pre = "|"
+    # es posible agregar información despues del nombre
+    # (el formato html esta permitido)
+    posts = ""
+    name = "Tags"
+    url = "/tags/"
+    title = "Entradas por categorias"
+    weight = 1
+
